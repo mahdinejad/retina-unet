@@ -31,7 +31,7 @@ Nimgs = 20
 channels = 3
 height = 584
 width = 565
-dataset_path = "./DRIVE_datasets_training_testing/"
+dataset_path = "DRIVE/DRIVE_datasets_training_testing/"
 
 def get_datasets(imgs_dir,groundTruth_dir,borderMasks_dir,train_test="null"):
     imgs = np.empty((Nimgs,height,width,channels))
