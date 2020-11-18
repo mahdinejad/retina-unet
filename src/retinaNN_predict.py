@@ -169,7 +169,7 @@ print ("y true pixels: " +str(y_true.shape[0]) +" (radius 270: 270*270*3.14==228
 fpr, tpr, thresholds = roc_curve((y_true), y_scores)
 AUC_ROC = roc_auc_score(y_true, y_scores)
 # test_integral = np.trapz(tpr,fpr) #trapz is numpy integration
-print "\nArea under the ROC curve: " +str(AUC_ROC)
+print ("\nArea under the ROC curve: " +str(AUC_ROC))
 roc_curve =plt.figure()
 plt.plot(fpr,tpr,'-',label='Area Under the Curve (AUC = %0.4f)' % AUC_ROC)
 plt.title('ROC curve')
